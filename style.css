@@ -22,13 +22,30 @@ body {
   z-index: -1;
 }
 p {
-    font-family:Merriweather, serif;
-    font-size:3vw;
-    padding:1% 0 0 2%;
+  font-family: Merriweather, serif;
+  font-size: 3vw;
+  padding: 1% 0 0 2%;
 }
 a {
-    font-family:Merriweather, serif;
-    font-size:2vw;
-    padding:1% 2%;
-    color:#bef7ff;
+  font-family: Merriweather, serif;
+  font-size: 2vw;
+  color: #bef7ff;
+  width:fit-content;
+}
+.links {
+  display: flex;
+  flex-direction: column;
+  padding: 0% 2%;
+}
+.links a {
+  padding: 0.5% 0;
+}
+.links a:nth-child(even) {
+  padding:0.5% 0;
+}
+.links a:nth-child(odd) {
+  padding:0.5% 2%;
+}
+.whoooleThing {
+  padding:2%;
 }
