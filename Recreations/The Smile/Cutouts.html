@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <style>
+      /*
+
+All grid code is placed in a 'supports' rule (feature query) at the bottom of the CSS (Line 77). 
+        
+The 'supports' rule will only run if your browser supports CSS grid.
+
+Flexbox is used as a fallback so that browsers which don't support grid will still recieve an identical layout.
+
+*/
+
+@import url(https://fonts.googleapis.com/css?family=Montserrat:500);
+
+:root {
+	/* Base font size */
+	font-size: 200%;
+}
+
+*,
+*::before,
+*::after {
+	box-sizing: border-box;
+}
+
+.footer{ 
+       position: fixed;     
+       text-align: center;    
+       bottom: 0px; 
+       width: 100%;
+       font-style: italic;
+       background: white;
+}  
+
+body {
+	min-height: 100vh;
+	background-color: #fafafa;
+}
+
+@font-face {
+  font-family: 'headline';
+  src: url(font_folder/HEADOH.TTF);
+}
+
+.container {
+	max-width: 100rem;
+	margin: 0 auto;
+	padding: 0 2rem 2rem;
+}
+
+.heading {
+	font-family:headline;
+	font-size: 4rem;
+	font-weight: 500;
+	line-height: 1.5;
+	text-align: center;
+	padding: 3.5rem 0;
+	color: #1a1a1a;
+}
+
+.heading span {
+	display: block;
+}
+
+.gallery {
+	display: flex;
+	flex-wrap: wrap;
+	/* Compensate for excess margin on outer gallery flex items */
+	margin: -1rem -1rem;
+}
+
+.gallery-item {
+	/* Minimum width of 24rem and grow to fit available space */
+	flex: 1 0 24rem;
+	/* Margin value should be half of grid-gap value as margins on flex items don't collapse */
+	margin: 1rem;
+	overflow: hidden;
+}
+
+.gallery-image {
+	display: block;
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+}
+
+
+/*
+
+The following rule will only run if your browser supports CSS grid.
+
+Remove or comment-out the code block below to see how the browser will fall-back to flexbox styling. 
+
+*/
+
+@supports (display: grid) {
+	.gallery {
+		display: grid;
+		grid-template-columns: repeat(auto-fit, minmax(24rem, 1fr));
+		grid-gap: 2rem;
+	}
+
+	.gallery,
+	.gallery-item {
+		margin: 0;
+	}
+}
+
+    </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cutouts By The Smile CD Scans</title>
+    <!-- The style.css file allows you to change the look of your web pages.
+         If you include the next line in all your web pages, they will all share the same look.
+         This makes it easier to make new pages for your site. -->
+    <link href="/style.css" rel="stylesheet" type="text/css" media="all">
+  </head>
+  <body>
+<div class="container">
+
+	<div class="gallery">
+
+		<div class="gallery-item">
+			<img class="gallery-image" title="Front Cover" src="https://i.discogs.com/LiXfv5Ln7ojgwYDm9TjMsBX_eWEBHD-w7TPaKiunyF4/rs:fit/g:sm/q:90/h:594/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTMxOTMy/NjU4LTE3MjgzNjIy/ODEtOTM3My5qcGVn.jpeg">
+		</div>
+
+		<div class="gallery-item">
+			<img class="gallery-image" title="Back Cover" src="https://i.discogs.com/dq4NK3eHHMJ3Qq1Pid3cNc_TlJ2kM3SS-NTsrYp1V-U/rs:fit/g:sm/q:90/h:597/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTMxOTMy/NjU4LTE3MjgzNjIy/ODItNDY1NC5qcGVn.jpeg">
+		</div>
+
+		<div class="gallery-item">
+			<img class="gallery-image" title="Art Book Front" src="https://i.discogs.com/ffp_nf4V_ecg576AEYhF2Qn8tLhFSIZBdFvxKYf8h_U/rs:fit/g:sm/q:90/h:598/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTMxOTMy/NjU4LTE3Mjg0NjUw/MDUtMzE3OC5qcGVn.jpeg">
+		</div>
+
+		<div class="gallery-item">
+			<img class="gallery-image" title="Art Book Back" src="https://i.discogs.com/JPr8M-CsEhImbjeSjryCMTLObElcUfzqDg1RYlTXpdE/rs:fit/g:sm/q:90/h:589/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTMxOTMy/NjU4LTE3Mjg0NjUw/MDctOTAzNy5qcGVn.jpeg">
+		</div>
+
+		<div class="gallery-item">
+			<img class="gallery-image" title="Page 1" src="https://i.discogs.com/ZJEL5iaqSm5X4t7o9lB0_sjrbmsOV2U9o4FkPeILUgo/rs:fit/g:sm/q:90/h:592/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTMxOTMy/NjU4LTE3MzA0NTQx/NDUtMTk5MC5qcGVn.jpeg">
+		</div>
+
+		<div class="gallery-item">
+			<img class="gallery-image" title="Page 2" src="https://i.discogs.com/uH2JFIwLq7yApdUhFJc_g_kZ6HuDhzfe08QpTtI9eyc/rs:fit/g:sm/q:90/h:593/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTMxOTMy/NjU4LTE3MzA0NTQx/NDYtODM0Mi5qcGVn.jpeg">
+		</div>
+				<div class="gallery-item">
+			<img class="gallery-image" title="Page 3" src="https://i.discogs.com/X86IHu7DqmeBv74RKCW6ma6et6VX2h0eXPeyv_A0epk/rs:fit/g:sm/q:90/h:593/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTMxOTMy/NjU4LTE3MzA0NTQx/NDYtMzQxOS5qcGVn.jpeg">
+		</div>
+				<div class="gallery-item">
+			<img class="gallery-image" title="Page 4" src="https://i.discogs.com/TAvE3oukVN2dze3o5YiEuavk9aBsT6EYuFnZKufZj4o/rs:fit/g:sm/q:90/h:595/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTMxOTMy/NjU4LTE3MzA0NTQx/NDYtNDE5My5qcGVn.jpeg">
+		</div>
+		<div class="gallery-item">
+			<img class="gallery-image" title="Page 5" src="https://i.discogs.com/o_vrUm8x-txefQF1CBcCC09l0fefeI6QBSEx0E55w0Y/rs:fit/g:sm/q:90/h:590/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTMxOTMy/NjU4LTE3MzA0NTQx/NDYtNDAzNS5qcGVn.jpeg">
+		</div>
+				<div class="gallery-item">
+			<img class="gallery-image" title="Page 6" src="https://i.discogs.com/96ApJu8k6uCQgFk7zOy3e3sw8yfezbvxLseirYmB5Go/rs:fit/g:sm/q:90/h:594/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTMxOTMy/NjU4LTE3MzA0NTQx/NDYtNzg0OC5qcGVn.jpeg">
+		</div>
+				<div class="gallery-item">
+			<img class="gallery-image" title="Page 7" src="https://i.discogs.com/Jn7DOY44SGMAlgKpNEgX7RfutXCPwxCaiJ___tGf67w/rs:fit/g:sm/q:90/h:594/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTMxOTMy/NjU4LTE3MzA0NTQx/NDctODE0Mi5qcGVn.jpeg">
+		</div>
+				<div class="gallery-item">
+			<img class="gallery-image" title="Page 8" src="https://i.discogs.com/_4lJeSGGJhCKIueCOKAuo3qINSpFTrHj2bnqI_ZhoHA/rs:fit/g:sm/q:90/h:589/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTMxOTMy/NjU4LTE3MzA0NTQx/NDctNzkyNS5qcGVn.jpeg">
+		</div>
+						<div class="gallery-item">
+			<img class="gallery-image" title="Page 9" src="https://i.discogs.com/4kmNYZZdmJbvPtskZt1tlsQaE3m-vfW4W8QmF0Vd-N8/rs:fit/g:sm/q:90/h:600/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTMxOTMy/NjU4LTE3MzEzNjM5/NjAtNDAwMi5qcGVn.jpeg">
+		</div>
+								<div class="gallery-item">
+			<img class="gallery-image" title="Page 10" src="https://i.discogs.com/_4lJeSGGJhCKIueCOKAuo3qINSpFTrHj2bnqI_ZhoHA/rs:fit/g:sm/q:90/h:589/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTMxOTMy/NjU4LTE3MzA0NTQx/NDctNzkyNS5qcGVn.jpeg">
+		</div>
+	</div>
+
+</div>
+<div class="footer"><t>use ctrl + scroll to zoom &bull; recommended 2 side by side layout &bull; hover your mouse over an image</t></div>
+  </body>
+</html>

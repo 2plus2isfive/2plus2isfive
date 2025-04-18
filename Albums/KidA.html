@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <style>
+    @import url('https://fonts.googleapis.com/css2?family=Afacad+Flux:wght@100..1000&display=swap');
+  p {
+    color:#fff;
+    font-family:helvetica;
+    font-weight:1000;
+    font-size: 2vw;
+    padding:0;
+    margin:0;
+  }
+  img {
+    float:left;
+    width:25%;
+  }
+  body {
+    background-color:#000;
+    text-align:center;
+    line-height:0.8;
+  }
+  .main {
+    width:60%;
+    background-color:rgba(0,0,0,0.5);
+    border-radius:1vw;
+    display:flex;
+  }
+  .bg {
+    height:100%;
+    width:100%;
+    text-align:center;
+    background:url("/img/KIDA_bg.jpeg") no-repeat center center;
+    background-size:cover;
+    background-attachment: fixed;
+    filter: blur(0.65vw) grayscale(0.5);
+    position: absolute;
+    left:0;
+    top: 0;
+    opacity:0.15;
+    z-index:-1;
+}
+.fontBg {
+  background-image: url("/img/KidAMtn.png");
+  background-size: contain;
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  filter:brightness(1) grayscale(1);
+  font-size:8vw;
+}
+.fontBg2 {
+  background-image: url("/img/KidAMtn.png");
+  background-size: contain;
+  -webkit-background-clip: text;
+  background-clip: text;
+  color:rgba(255,0,0,0.5);
+  filter:brightness(1) saturate(2);
+  font-size:2.5vw;
+}
+    .parent {
+position:absolute;
+justify-content:center;
+display:flex;
+align-items:center;
+height:100%;
+width:100%;
+top:0;
+left:0;
+}
+.centered {
+  user-select:none;
+}
+    </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kid A</title>
+    <link href="/style.css" rel="stylesheet" type="text/css" media="all">
+  </head>
+  <body>
+<div class="bg"></div>
+<div class="parent">
+<div class="centered">
+<p class="fontBg2" style="letter-spacing:0.1vw;">RADIOHEAD</p>
+<p class="fontBg" style="letter-spacing:0.1vw;">KID A</p>
+</div></div>
+  </body>
+</html>

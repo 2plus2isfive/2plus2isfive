@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <style>
+@import url('https://fonts.googleapis.com/css2?family=Overpass:wght@100..900&display=swap');
+
+body {
+  background-color:#000;
+  text-align:center;
+  font-family:overpass,verdana;
+  color:#000;
+  font-weight:bold;
+  font-size:1vw;
+  overflow:hidden;
+}
+p {
+  font-family: overpass;
+  margin: 0;
+  padding-top: 0;
+  padding-left: 0.5vw;
+  padding-right: 0.5vw;
+  font-size: 4.5vw;
+  letter-spacing: 1.2vw;
+  font-weight:bold;
+  line-height:7.2vw;
+  cursor:default;
+}
+hr {
+  height:0.2vw;
+  background-color:#D5D3BC;
+}
+.chat {
+        position: fixed;     
+       text-align: left;    
+       bottom: 0px; 
+       width: 20vw;
+       z-index:2;
+}
+.footer{ 
+       position: fixed;     
+       text-align: center;    
+       bottom: 0px; 
+       width: 100%;
+}  
+.right{
+      position: fixed;     
+      text-align: right;    
+      top: 0px;
+      width: 100%;
+}
+
+.bg {
+    height:100%;
+    width:100%;
+    text-align:center;
+    background:url("img/IR_bg.jpg") no-repeat center center;
+    background-size:cover;
+    background-attachment: fixed;
+    -webkit-filter: blur(6px);
+    -moz-filter: blur(6px);
+    -o-filter: blur(6px);
+    -ms-filter: blur(6px);
+    filter: blur(0.2vw);
+    position: absolute;
+    left:0;
+    top: 0;
+    opacity:1;
+    z-index:-1;
+}
+
+img {
+  border-radius:30px;
+  padding:12px;
+}
+.main {
+  max-width: 65%;
+  margin-left: auto;
+  margin-right: auto;
+  background-color:#f7f5de;
+  border-radius:1vw;
+}
+.credits {
+  font-weight:normal;
+  font-size:0.8vw;
+}
+.name  {
+  background-color:#FF7DA4;
+  border-radius:1vw;
+  color:#fff;
+  max-width: 50%;
+  margin-left: auto;
+  margin-right: auto;
+  display:inline;
+}
+.title {
+   
+}
+.subtitle {
+  
+}
+.container{
+  display:flex;
+  flex-direction:row;
+}
+.sidebar {
+  position:relative;
+  width:15%;
+  height:100%;
+  background-color:#f7f5de;
+  text-align:justify;
+  left:0;
+  top:0;
+  opacity:1;
+  transition: opacity .25s ease-in;
+  padding:1vw;
+  display:flex;
+  flex-direction:column;
+  background-color:#E1DFC8;
+  border-radius:1vw;
+  margin-left:0.5vw;
+}
+/*
+.sidebar:hover {
+opacity:1;
+width:10vw;
+}
+*/
+.option {
+
+}
+.option:hover {
+  background-color:#FF7DA4;
+  color:#fff;
+}
+.submain {
+  position:relative;
+  left:0%;
+  background-color:#E1DFC8;
+  width:76.5%;
+  border-radius:1vw;
+  padding:1vw;
+  margin-left:0.5vw;
+}
+.audioPlayer {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.audioButtons {
+    display:flex;
+    flex-direction:row;
+    justify-content:center;
+    user-select: contain;
+    user-select: none;
+    background-color:#fff;
+    transition: background 0.1s ease-in;
+    cursor:pointer;
+    border-radius:1vw;
+    line-height:1.5vw;
+    margin-top:0.2vw;
+}
+.option1 {border-top-left-radius:1vw; border-bottom-left-radius:1vw; transition: background 0.1s ease-in;}
+.option1:hover {
+  background-color:#FFD336;
+  color:#fff; 
+}
+.option2 {transition: background 0.1s ease-in;}
+.option2:hover {
+  background-color:#3976CC;
+  color:#fff; 
+}
+.option3 {transition: background 0.1s ease-in;}
+.option3:hover {
+  background-color:#FF6C22;
+  color:#fff; 
+}
+.option4 {transition: background 0.1s ease-in;}
+.option4:hover {
+  background-color:#6DBA39;
+  color:#fff; 
+}
+.option5 {border-top-right-radius:1vw; border-bottom-right-radius:1vw; transition: background 0.1s ease-in;}
+.option5:hover {
+  background-color:#FFC43A;
+  color:#fff; 
+}
+.item {
+  width: 100%;
+  height: 100%;
+  transition: transform 0.3s ease;
+  user-select:none;
+}
+    .parent {
+position:absolute;
+justify-content:center;
+display:flex;
+align-items:center;
+height:100%;
+width:100%;
+top:0;
+left:0;
+}
+
+/* Enlarge the item on hover */
+.item:hover {
+  transform: scale(1.1);
+}
+/*
+.smimage {
+  position:absolute;
+  right:0.75vw;
+  bottom:0.65vw;
+}
+*/
+a {
+  text-decoration:none;
+  color:inherit;
+}
+</style>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>RADIOHEAD</title>
+      <link href="/style.css" rel="stylesheet" type="text/css" media="all">
+      <link rel="icon" href="img/modbear_white.png">
+  </head>
+    <body>
+      <div class="bg"></div>
+      <div class="parent">
+      <div class="centered">
+<p class="item" style="color:#FFD336;">IN/ RAINBOWS</p>
+<p class="item" style="color:#3976CC;">IN RAIN/BOWS</p>
+<p class="item" style="color:#FF6C22;">IN RAINBOW/S</p>
+<p class="item" style="color:#6DBA39;">IN RAINBOWS/</p>
+<p class="item" style="color:#FFC43A;">IN RAIN_BOWS</p>
+<p class="item" style="color:#FE2020;"><a href="https://2plus2isfive.neocities.org/Home">CO/ NTI NUE_?</a></p>
+<p class="item" style="color:#80CEFC;">_RAD IO HEA D</p>
+</div>
+      </div>
+ <!--     
+            <div class=audioPlayer>
+            <p style="color:#FFF">DOWN IS THE NEW UP</p>
+  <audio id="player" loop src="/media/Down is the New Up.mp3"></audio>
+<div class="audioButtons"> 
+  <p class="option1" title="Play" onclick="document.getElementById('player').play()">&nbsp; &nbsp;⏵&nbsp;︎ &nbsp;</p>&nbsp;
+  <p class="option2" title="Pause" onclick="document.getElementById('player').pause()">&nbsp; &nbsp;⏸&nbsp;︎ &nbsp;</p>&nbsp;
+  <p class="option3" title="Stop" onclick="document.getElementById('player').pause(), document.getElementById('player').currentTime = 0">&nbsp; &nbsp;⏹&nbsp;︎︎ &nbsp;</p>&nbsp;
+  <p class="option4" title="Volume Up" onclick="document.getElementById('player').volume += 0.1">&nbsp; &nbsp;+&nbsp; &nbsp;</p>&nbsp;
+  <p class="option5" title="Volume Down" onclick="document.getElementById('player').volume -= 0.1">&nbsp; &nbsp;-&nbsp; &nbsp;</p>
+</div>
+            </div>
+            -->
+    </body>
+</html>

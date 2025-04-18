@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&display=swap");
+
+      body {
+        font-family: Instrument Serif;
+        background-color: #151515;
+        display: flex;
+        overflow: hidden;
+      }
+      p {
+        text-transform: uppercase;
+        color: #fff;
+        margin: 0;
+        line-height: 1.5vw;
+      }
+      .footer {
+        position: fixed;
+        bottom: 0;
+        width: 100%;
+        overflow: hidden;
+        margin: 0;
+        padding: 0;
+        font-size: 1vw;
+      }
+      .pageL {
+        width: 50%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+      }
+      .pageR {
+        width: 50%;
+        right: 0;
+        background-color: #0000ff;
+        height: 100%;
+      }
+      .title {
+        font-size: 1.8vw;
+      }
+      .lyrics {
+        font-size: 1.162vw;
+        margin: 0;
+        padding: 0;
+        line-height: 1.162vw;
+        width: 90%;
+        text-align: justify;
+      }
+      .pageL-top {
+        display: flex;
+        flex-direction: row;
+        overflow: hidden;
+      }
+      .mirrorImg {
+        background-image: url(https://preview.redd.it/iconic-source-missing-texture-perhaps-as-background-for-v0-7w2ub87dycdb1.png?auto=webp&s=782627cdfff19e7c343b5ac7f1c088d8ca082a94)
+          cover;
+        width: 100%;
+        height: 100%;
+        background-color: #fff;
+      }
+      .circled {
+        border-radius: 50%;
+        width: 1vw;
+        height: 1vw;
+        padding: 0.2vw;
+
+        background: #151515;
+        border: 0.15vw solid #fff;
+        color: #fff;
+        text-align: center;
+
+        font: 1.8vw Instrument Serif, Times;
+        margin-left: 1vw;
+      }
+      .centerline {
+        position: absolute;
+        width: 50%;
+        height: 100%;
+        z-index: -1;
+        border-right: 0.1vw dotted #00ff00;
+        overflow: hidden;
+      }
+    </style>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>MERCI POUR LE VENIN</title>
+    <!-- The style.css file allows you to change the look of your web pages.
+         If you include the next line in all your web pages, they will all share the same look.
+         This makes it easier to make new pages for your site. -->
+    <link href="/style.css" rel="stylesheet" type="text/css" media="all" />
+  </head>
+  <body>
+    <div class="centerline"></div>
+    <div class="footer">
+      <p style="text-align: left">Gerard Way - Vocals</p>
+    </div>
+    <div class="footer">
+      <p style="text-align: right">
+        MIKEY WAY - THE BASS GUITAR&nbsp;&nbsp;&nbsp;
+      </p>
+    </div>
+    <p
+      style="
+        font-size: 20vw;
+        margin: 0;
+        padding-top: 10vw;
+        opacity: 0.15;
+        transform: scaleY(1.4);
+      "
+    >
+      2
+    </p>
+    <div class="pageL">
+      <div class="pageL-top">
+        <p class="lyrics">
+          The amount of pills I'm taking. Counteracts the booze I'm drinking.
+          And this vanity I'm breaking. Lets me live my life like this.And well
+          I find it hard to stay. With the words you say. Oh baby let me in.
+          Well I'll choose the life I've taken. Never mind the friends I'm
+          making.And the beauty that I'm faking.Let's me live my life like
+          this.And well I find it hard to stay with the words you say.Oh baby
+          let me in.And you can cry all you want to I don't
+        </p>
+        <div class="mirrorImg"></div>
+      </div>
+      <hr style="height: 1.2vw; visibility: hidden" />
+      <p class="title">
+        Honey, This Mirror Isn't Big Enough
+        <span class="circled">&nbsp;&nbsp;2&nbsp;&nbsp;</span><br />for the Two
+        of Us.
+      </p>
+    </div>
+
+    <div class="pageR">
+      <p class="title">Vampires Will Never Hurt You.</p>
+    </div>
+  </body>
+</html>

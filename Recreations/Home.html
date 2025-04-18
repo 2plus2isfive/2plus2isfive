@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <style>
+      #finished {
+        background-color: #00ff00;
+        transition:1s;
+      }
+      #finished:hover {
+        filter:drop-shadow(0 0 1vw #000) drop-shadow(0 0 0.25vw #00ff00);
+      }
+      #unfinished {
+        background-color: #ffff00;
+        transition:1s;
+      }
+      #unfinished:hover {
+        filter:drop-shadow(0 0 1vw #000) drop-shadow(0 0 0.25vw #ffff00);
+      }
+      #notStarted {
+        background-color: #ff0000;
+        transition:1s;
+      }
+      #notStarted:hover {
+        filter:drop-shadow(0 0 1vw #000) drop-shadow(0 0 0.25vw #ff0000);
+      }
+    </style>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="/img/radiohead_icon.png" type="image/x-icon" />
+    <link rel="stylesheet" href="/style.css" />
+    <link rel="stylesheet" href="/cds.css" />
+    <title>COM LAG RADIOHEAD</title>
+  </head>
+  <body>
+    <div class="background"></div>
+    <div class="parent">
+      <div class="main">
+        <img class="logo" src="/img/radiohead.svg" alt="Radiohead" />
+        <div class="options">
+          <a class="option" href="/index.html">Home</a>
+          <a id="current" class="option" href="/cds.html">CDs (Recreations)</a>
+          <a class="option" href="/gallery.html">Gallery</a>
+          <a class="option" href="/contact.html">Contact</a>
+        </div>
+        <hr />
+        <div
+          style="
+            font-family: 'eb garamond', serif;
+            font-size: 2vw;
+            color: #fff;
+            text-align-last: justify;
+            line-height: 0.9;
+            text-transform: uppercase;
+            font-style: italic;
+            text-justify: newspaper;
+          "
+        >
+          <span style="color: #00ff00">Finished</span>
+          &nbsp;&bull;&nbsp;
+          <span style="color: #ffff00">Unfinished</span>
+          &nbsp;&bull;&nbsp;
+          <span style="color: #ff0000">Not Started</span>
+        </div>
+        <hr />
+        <div class="cdParent">
+          <div class="cdMain">
+            <a class="coverLink" href="/Recreations/Circa Survive/Juturna.html">
+              <img
+                class="cover"
+                src="/img/covers/Juturna.jpg"
+                alt="Circa Survive - Juturna"
+                title="Circa Survive - Juturna"
+                id="unfinished"
+            /></a>
+
+            <a
+              class="coverLink"
+              href="/Recreations/Circa Survive/OnLettingGo.html"
+            >
+              <img
+                class="cover"
+                src="/img/covers/OnLettingGo.jpg"
+                alt="Circa Survive - On Letting Go"
+                title="Circa Survive - On Letting Go"
+                id="unfinished"
+            /></a>
+
+            <a
+              class="coverLink"
+              href="/Recreations/Gerard Way/HesitantAlien.html"
+            >
+              <img
+                class="cover"
+                src="/img/covers/HesitantAlien.jpg"
+                alt="Gerard Way - Hesitant Alien"
+                title="Gerard Way - Hesitant Alien"
+                id="unfinished"
+            /></a>
+
+            <a
+              class="coverLink"
+              href="/Recreations/Hail the Sun/DivineInnerTension.html"
+            >
+              <img
+                class="cover"
+                src="/img/covers/DivineInnerTension.jpg"
+                alt="Hail The Sun - Divine Inner Tension"
+                title="Hail The Sun - Divine Inner Tension"
+                id="notStarted"
+            /></a>
+            <a
+              class="coverLink"
+              href="/Recreations/My Chemical Romance/Bullets1_2.html"
+            >
+              <img
+                class="cover"
+                src="/img/covers/Bullets.jpg"
+                alt="My Chemical Romance - I Brought You My Bullets, You Brought Me Your Love"
+                title="My Chemical Romance - I Brought You My Bullets, You Brought Me Your Love"
+                id="unfinished"
+            /></a>
+
+            <a
+              class="coverLink"
+              href="/Recreations/My Chemical Romance/ThreeCheersForSweetRevenge.html"
+            >
+              <img
+                class="cover"
+                src="/img/covers/ThreeCheersForSweetRevenge.jpg"
+                alt="My Chemical Romance - Three Cheers For Sweet Revenge"
+                title="My Chemical Romance - Three Cheers For Sweet Revenge"
+                id="unfinished"
+            /></a>
+
+            <a
+              class="coverLink"
+              href="/Recreations/Paramore/AllWeKnowIsFalling.html"
+            >
+              <img
+                class="cover"
+                src="/img/covers/AllWeKnowIsFalling.jpg"
+                alt="Paramore - All We Know Is Falling"
+                title="Paramore - All We Know Is Falling"
+                id="notStarted"
+            /></a>
+
+            <a class="coverLink" href="/Recreations/Radiohead/TheGloaming.html">
+              <img
+                class="cover"
+                src="/img/covers/HailToTheThief.jpg"
+                alt="Radiohead - Hail To The Thief"
+                title="Radiohead - Hail To The Thief"
+                id="unfinished"
+            /></a>
+
+            <a
+              class="coverLink"
+              href="/Recreations/Saosin/TranslatingTheName.html"
+            >
+              <img
+                class="cover"
+                src="/img/covers/TranslatingTheName.jpg"
+                alt="Saosin - Translating The Name"
+                title="Saosin - Translating The Name"
+                id="finished"
+            /></a>
+
+            <a
+              class="coverLink"
+              href="https://www.discogs.com/master/313637-Saosin-Saosin"
+            >
+              <img
+                class="cover"
+                src="/img/covers/Saosin.jpg"
+                alt="Saosin - Saosin"
+                title="Saosin - Saosin"
+                id="notStarted"
+            /></a>
+
+            <a
+              class="coverLink"
+              href="/Recreations/Tally Hall/GoodAndEvil.html"
+            >
+              <img
+                class="cover"
+                src="/img/covers/GoodAndEvil.jpg"
+                alt="Tally Hall - Good & Evil"
+                title="Tally Hall - Good & Evil"
+                id="unfinished"
+            /></a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="scripts/randomText/randomText.js"></script>
+    <script src="scripts/popup.js"></script>
+  </body>
+</html>

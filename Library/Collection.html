@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <style>
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+    body {
+      padding:0;
+      margin:0;
+      display:flex;
+      background-color:rgba(0,0,0,0.25);
+      overflow:hidden;
+    }
+    .container {
+      width:100%;
+      flex-direction:row;
+      display:flex;
+      flex-wrap:wrap;
+      justify-content:center;
+      padding:3%;
+      padding-top:5%;
+    }
+    img {
+      padding:0.5%;
+      transition:0.3s;
+      aspect-ratio:1 / 1;
+      border-radius:1vw;
+      filter:blur(0.1vw) grayscale(80%);
+    }
+    img:hover {
+      -webkit-transform:scale(2.15,1.5) perspective(80vw) rotate3d(0, -1, 0, 45deg);
+      aspect-ratio:5 / 1;
+      z-index:10;
+      filter:blur(0) grayscale(0) drop-shadow(0 0 1vw #000);
+      border-radius:0;
+    }
+    #new {
+      filter:drop-shadow(0 0 1vw #505000);
+    }
+    </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CD Collection</title>
+    <link href="/style.css" rel="stylesheet" type="text/css" media="all">
+  </head>
+  <body>
+    <div class="container">
+      <img title="AMOK (Limited Edition)" width="13%" src="https://i.discogs.com/-DQAgmHdatpfG4TkkoG4BgaHlcFesoCg_xcbEgXUx9I/rs:fit/g:sm/q:90/h:584/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTQzMTM4/MzgtMTQ1NzMwNDcw/OC0xMTcyLmpwZWc.jpeg">
+      <img title="Juturna" width="13%" src="https://lh3.googleusercontent.com/YeNRzBcMZrVgbHk6sQn9FLuikkWx8UOK_7yt736FNxdodVF1C0gtiiSV98n3L1Y9bwslS-njG7deCVWS=w544-h544-l90-rj">
+      <img title="On Letting Go" width="13%" src="https://lh3.googleusercontent.com/PFBKwY0m_yUF-L9CjP1aqxmSyDx37W-1tch2ic3dfqzjALRXKaUoWaTbpk5JRKowjaTYBE9VMIy4KYP5=w544-h544-l90-rj">
+      <img title="Hesitant Alien" width="13%" src="https://lh3.googleusercontent.com/xurSXrMSa_b5soMxX6_fk7vwGuh2PdCo2Fe8wnBTS0_HYir_MrmMT-PR7q3uZzJT_pq-3QnfWOtfHZ0=w544-h544-l90-rj">
+      <img id="new" title="Divine Inner Tension" width="13%" src="https://lh3.googleusercontent.com/AeUBpaFpAE3OlqdFB6g8B3RrjTG_r2lFZkap7IMsoUP-Jn5kyzUHJotNRrCZajhwPQ1DHjQiwMDuTsQP=w544-h544-l90-rj">
+      <img title="I Brought You My Bullets, You Brought You Me Love" width="13%" src="https://lh3.googleusercontent.com/RrX4VwZJiJMx-PePI_EZW8lwe-0ft313MpvPyFr3oIXhoxGnH6zx3NjCukGRfIZuav8cgOy2mmYLQOM=w544-h544-l90-rj">
+      <img title="Three Cheers for Sweet Revenge" width="13%" src="https://lh3.googleusercontent.com/5JtzMbsUJfBViHSlte4ddyD7kd__O7w7JtK1Icwwb8xXMQZkgy7DYfKnVS57oEvEBQwlv6Z1VhbVdcpx8A=w544-h544-l90-rj">
+      <img title="The Black Parade" width="13%" src="https://lh3.googleusercontent.com/v_9D7-qcGPdGaKb-sA5wBwpY9SXsUZdzMLFcaR_AQRsY84iQnOEfI9hKUh5B1Veb_HElggrbVRDVp5yl=w544-h544-l90-rj">
+      <img title="Nevermind (Misprint)" width="13%" src="https://lh3.googleusercontent.com/5zD1MULLvF5bvatvjcyAyBHJZyvql_yrnrPfW2g5Sp6a5kRoMxVUlQp9iK6j8YHoIl03ZGwmN4NFW7M=w544-h544-l90-rj">
+      <img title="In Utero" width="13%" src="https://lh3.googleusercontent.com/AU54rAq1sj8xzHtArON5sp8gE7eUc_4c2I1suZz85nkTCpBYIxOYil6vH5PL4Ue49MtHWqbRWefjC2mW=w544-h544-l90-rj">
+      <img title="D>E>A>T>H>M>E>T>A>L" width="13%" src="https://lh3.googleusercontent.com/aGQBDt47dtfaR2n5Hu_3OIi9JAtVbYzpRz4eEtH37F8ggDtJbr16yWFd-RIonmyQvzygs99FQZax5lEb=w544-h544-l90-rj">
+      <img title="All We Know is Falling" width="13%" src="https://lh3.googleusercontent.com/AwYtAWf9bTdyZdAwk1m3LWfwQS83VRkhiPOeEg9FQghPeW2sBj3Y1D1QRYtDKPxmXTrm1_VgZWEOO8Q=w544-h544-l90-rj">
+      <img title="RIOT!" width="13%" src="https://lh3.googleusercontent.com/m2ve8j_wJWg5NOVGlqJQxHtftRddr9U8yzpba_mDg0Anl4edUMCaKe829sXJmGbYvfV5UOeKF7GPaYE=w544-h544-l90-rj">
+      <img title="Brand New Eyes" width="13%" src="https://lh3.googleusercontent.com/0todJPblza6th0lfNIUJ7yLxx0rPy4TtA40aIg07tmLDIUqFnkM69UW4yWuXBpt7WLewWjO7_wsfLOg=w544-h544-l90-rj">
+      <img title="Paramore" width="13%" src="https://lh3.googleusercontent.com/RfEJaAn-A8Ldp3Imr6L5gLriAGLUI4oU4zHyF754-JYo3PdwYDiHEnGHynJrMVFTapc9AV9IxgggzC0x=w544-h544-l90-rj">
+      <img title="Pablo Honey" width="13%" src="https://lh3.googleusercontent.com/U7k2oSmy45dhhj8ACdsUr1hQAvoY1IcOlHI_ZwU2rckJte1UEcTyrBUPUGr6Q-HT9-zeY0BwJ05xlOOJ=w544-h544-l90-rj">
+      <img title="My Iron Lung" width="13%" src="https://lh3.googleusercontent.com/6zldi67DusVnp_snuFz-sGTteUe6Oj-_eEij71aMJyp22792HQyhppqCRHeStEJ6K8Jp0zcNO18H7wORWw=w544-h544-l90-rj">
+      <img title="The Bends" width="13%" src="https://lh3.googleusercontent.com/TWWT47cHLv3yAugk4h9eOzQ46FHmXc_g-KmBVy2d4sbg_F-Gv6xrPglztRVzp8D_l-yzOnvh-QToM8s=w544-h544-l90-rj">
+      <img title="Kid A (Hidden Booklet)" width="13%" src="https://lh3.googleusercontent.com/yJLXG7QJySOUp57Nff9te1cqhRqvz9BHusWk8c9ek08m-DRv5TJhCqW0HV2tAk5K2ErChBlHEUeFfGt_6A=w544-h544-l90-rj">
+      <img title="Hail to the Thief" width="13%" src="https://lh3.googleusercontent.com/gr6wVIJfPqUPFR-MbaZfekLxRk8iK9oT12rKfggkVcfSxtJyn5gB_WXeOK1YTANdzEFU0b-0m12Vps29=w544-h544-l90-rj">
+      <img title="In Rainbows" width="13%" src="https://lh3.googleusercontent.com/BAl1FqoDaFrpWSSrr95Yjii4fJSeitdRcVt7f-uOVrhxQfmo5ActMNysFErQfI-CiOZR4GH2fePoVQtd=w544-h544-l90-rj">
+      <img title="In Rainbows (Japanese Expanded Edition)" width="13%" src="https://coverartarchive.org/release/68e18fe3-1c1c-406f-83b0-26ae08642f19/9859540734.jpg">
+      <img title="The King of Limbs" width="13%" src="https://lh3.googleusercontent.com/mdFzWlwK2T-W-ZVZKiLYXiAm0gG8tIyzY9vmb3c1-SjQKBnPcp9tmiAQoMa0lB8TUMrAHje3NhvM5PNc=w544-h544-l90-rj">
+      <img title="A Moon Shaped Pool" width="13%" src="https://lh3.googleusercontent.com/zhUubAG27CeM7pofkoJFJwyWsN0mqrTYeQ7NkWH0YLKan8gykddpDzxRu8ih-vGwACPGgLx4Bu6qwBIS=w544-h544-l90-rj">
+      <img title="OK Computer OKNOTOK 1997 2017" width="13%" src="https://lh3.googleusercontent.com/gdMTA2cTkNFr6COYNygeVpgIpxR2yNg5MjaX02OQqmsU6NlymcR2mqWR0UZe2HaBYVSTHU8lIQamafQC=w544-h544-l90-rj">
+      <img title="KID A MNESIA" width="13%" src="https://lh3.googleusercontent.com/xKX7vViVFA060KCM-JtJSpGBI3o-pt45fL1Nrl1WaOr0GVfdlcEeDyyAKnHF3-Urh0T36n0bx50_Woc=w544-h544-l90-rj">
+      <img title="Translating the Name" width="13%" src="https://i.discogs.com/lGnrt4aAse3hq4F1oeEC_RJOm2CQGgMkfk_RAASdOg8/rs:fit/g:sm/q:90/h:600/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTEwNjgw/MTMtMTczNDk2NDA2/NS0zODEwLnBuZw.jpeg">
+      <img title="Saosin" width="13%" src="https://lh3.googleusercontent.com/UZisIFTeUCabHCt_8b30BVpOyFS1O5fErgc7BjqE3FWsaozD-QuKcrQrzJmoTR9UrV6hSxJ_PDCEMLo0Fg=w544-h544-l90-rj">
+      <img title="Along the Shadow (Japanese)" width="13%" src="https://lh3.googleusercontent.com/tu-bVGdqKR9_0Go_1uZqm-FGyAAXRQPyWKPF6iHdHve3X8Uo3yR9-RQfD99XtPpvB9hplYBTsNk1phOj=w544-h544-l90-rj">
+      <img title="Good & Evil" width="13%" src="https://lh3.googleusercontent.com/3eSkZjXzr4h7SPBDa8-8U_Cf2pl8x-DOaod08GWZ3ANYOhq-NWnzhEuMhmwQVuXOSG_6c1-iGYZZnqfV=w544-h544-l90-rj">
+      <img title="Cutouts" width="13%" src="https://lh3.googleusercontent.com/LsYP0ipqy-YaKkC6RQOEfjgPJjfyT4Uervy3lxeQne404b1GV2b_pmdvNsnsjoAf8C0RX0GYTFYcXNCq-w=w544-h544-l90-rj">
+      <img title="The Eraser" width="13%" src="https://lh3.googleusercontent.com/k2edcyNukxmOnmcjPvsnFvhNY_Nlxx2l3esJS3ZioGC56xgG9RSB9datF6tNtq_2Eab8Fz5ZPwiyEf0=w544-h544-l90-rj">
+      <img title="Tomorrow's Modern Boxes" width="13%" src="https://lh3.googleusercontent.com/-odTXHO9dPzg1nIpQTFlXqw6DqAigyrfuOKavhCmGvCAjjNkT4qqOcDXnW4xUism2Hf2g6Ydm9zpRL4=w544-h544-l90-rj">
+      <img title="IGOR" width="13%" src="https://lh3.googleusercontent.com/_c4JMCiDeaC2RRfShXddOuIV_A7oCL4m1R6-YK-3TDlsYgNQTXwxV0f-TTJrsO1StMt07qW3O6XNPSNt=w544-h544-l90-rj">
+    </div>
+  </body>
+</html>

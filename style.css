@@ -1,0 +1,167 @@
+@import url("https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400..800;1,400..800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Overpass:ital,wght@0,100..900;1,100..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Michroma&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
+
+#o1 {
+  color: #f7ee49;
+}
+#o2 {
+  color: #4686c6;
+}
+#o3 {
+  color: #f36525;
+}
+#o4 {
+  color: #45b64a;
+}
+#o5 {
+  color: #edb41f;
+}
+#o6 {
+  color: #ec2427;
+}
+#o7 {
+  color: #a4dde6;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scrollbar-gutter: none;
+}
+.background {
+  background-image: url('/img/COMLAG.jpg');
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-position: center center;
+  background-attachment: fixed;
+  height: 100%;
+  background-size: cover;
+  z-index: -1;
+  opacity: 0.8;
+  filter: blur(0.1vw);
+}
+body {
+  background-color: #000;
+}
+.parent {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+.main {
+  background-color: #000000aa;
+  width: 75%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  backdrop-filter: blur(2vw);
+  height: auto;
+}
+.logo {
+  filter: invert(100%) brightness(200%);
+  width: 90%;
+  margin: 1%;
+  margin-top: 2%;
+}
+.options {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  width: 90%;
+}
+.option {
+  color: #fff;
+  font-family: michroma;
+  text-transform: uppercase;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 2vw;
+}
+#current {
+  color: #c0cfee;
+}
+hr {
+  width: 90%;
+  margin: 1%;
+  margin-left:0;
+  margin-right:0;
+  border: 0.1vh solid #ffffff50;
+}
+.siteLink {
+  color: #fff;
+  font-size: 2vw;
+  font-weight: bold;
+  font-family: Michroma;
+  text-decoration: none;
+}
+.content {
+  width: 90%;
+  font-family: 'EB Garamond';
+  color:#fff;
+  text-align:justify;
+}
+.content h1 {
+  color: #fff;
+  font-family: "EB Garamond", serif;
+  font-size: 3vw;
+  line-height:1;
+}
+.content p {
+  font-size:2vw;
+  line-height:1;
+}
+.content a {
+  font-size:2vw;
+  line-height:0.9;
+  color:#fff;
+  text-transform: capitalize;
+  font-weight:400;
+  text-decoration: none;
+  font-family: 'EB Garamond', serif;
+}
+.content hr {
+  width:100%;
+  border:0vh solid #00000000;
+}
+.link {
+  color: #fff;
+  font-family:'EB Garamond', serif;
+  font-size: 2vw;
+  text-decoration: none;
+  line-height: 0.9;
+}
+#randomText {
+  font-family: 'eb garamond', serif;
+  font-size: 2vw;
+  color: #fff;
+  text-align-last: justify;
+  line-height:0.9;
+  text-transform: uppercase;
+  font-style: italic;
+  text-justify:newspaper;
+}
+.footer {
+  text-align: center;
+  color: #ffffff;
+  width: 100%;
+  display:flex;
+  justify-content: space-between;
+  font-family:'eb garamond', serif;
+  bottom:0;
+  position:fixed;
+  color:#f7451d;
+  font-weight:bold;
+  font-size:3vw;
+  z-index:-1;
+  filter:drop-shadow(0 0 1vw #e4e3e3) drop-shadow(0 0 0.5vw #e4e3e3);
+  padding:0.5%;
+}
+.links {
+  display:flex;
+  justify-content:space-between;
+  width:100%;
+}
