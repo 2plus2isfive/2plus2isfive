@@ -1,4 +1,4 @@
-fetch('randomText.txt')
+fetch('/2plus2isfive/scripts/randomText/randomText.txt')
   .then(response => response.text())
   .then(text => {
     const lines = text.split('\n').filter(line => line.trim() && !line.trim().startsWith('//'));
