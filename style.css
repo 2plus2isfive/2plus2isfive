@@ -20,32 +20,30 @@ body {
 }
 p {
   font-family: Merriweather, serif;
-  font-size: 3vw;
-  padding: 1% 0 0 2%;
+  font-size: 2vw;
+  font-style:normal;
 }
-a {
+p a {
   font-family: Merriweather, serif;
   font-size: 2vw;
   color: #bef7ff;
   width: fit-content;
+  font-style: italic;
 }
 .links {
   display: flex;
   flex-direction: column;
-  padding: 0% 2%;
 }
 .links a {
-  padding: 0.5% 0;
   transition: 0.3s;
 }
 .links a:nth-child(even) {
-  padding: 0.5% 0;
 }
 .links a:nth-child(odd) {
-  padding: 0.5% 2%;
 }
 .whoooleThing {
   height: 100vh;
+  padding: 0% 2.6%;
 }
 .gradient {
   background: linear-gradient(#00000000, #000000ee);
@@ -66,14 +64,18 @@ a {
   bottom: 0;
   right: 0;
   width: 22%;
-  filter:drop-shadow(0 0 0.02vw #fff);
+  filter: drop-shadow(0 0 0.02vw #fff);
 }
 .segment p {
-  font-size:2vw;
-  bottom:0;
+  font-size: 2vw;
+  bottom: 0;
 }
 .midText {
-  opacity:0.05;
-  filter:drop-shadow(0 0 0.1vw #fff);
-  user-select:none;
+  opacity: 0.05;
+  filter: drop-shadow(0 0 0.1vw #fff);
+  user-select: none;
+}
+.header {
+  font-size: 3vw;
+  padding:2% 0 0 0;
 }
