@@ -1,1 +1,1 @@
-https://2plus2isfive.github.io/
+https://22is5.org/
