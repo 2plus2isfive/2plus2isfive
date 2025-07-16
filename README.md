@@ -1,1 +1,1 @@
-https://22is5.org
+https://22is5.com
